@@ -4,7 +4,7 @@
 #include <ui_order.h>
 #include <QtSql>
 #include <QString>
-
+// Класс для визуализации окна заказа (добавление/редактура)
 class Order: public QDialog {
 	Q_OBJECT
 public:

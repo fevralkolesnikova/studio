@@ -3,7 +3,7 @@
 #include <QDialog>
 #include <QtSql>
 #include <ui_storage.h>
-
+// Класс для визуализации окна материала (добавление/редактура)
 class Storage: public QDialog {
 	Q_OBJECT
 public:

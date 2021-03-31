@@ -7,7 +7,7 @@
 #include <QString>
 #include <string>
 #include <QtSql>
-
+// Класс для визуализации основного окна программы
 class MainWindow : public QMainWindow {
 	Q_OBJECT
 public:
