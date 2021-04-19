@@ -23,10 +23,10 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Титульная страница",url:"index.html"},
-{text:"Классы",url:"annotated.html",children:[
-{text:"Классы",url:"annotated.html"},
-{text:"Алфавитный указатель классов",url:"classes.html"},
-{text:"Иерархия классов",url:"hierarchy.html"}]},
-{text:"Файлы",url:"files.html",children:[
-{text:"Файлы",url:"files.html"}]}]}
+{text:"Main Page",url:"index.html"},
+{text:"Classes",url:"annotated.html",children:[
+{text:"Class List",url:"annotated.html"},
+{text:"Class Index",url:"classes.html"},
+{text:"Class Hierarchy",url:"hierarchy.html"}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"}]}]}

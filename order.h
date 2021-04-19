@@ -9,10 +9,12 @@ class Order: public QDialog {
 	Q_OBJECT
 public:
 	Order(QWidget * parent = nullptr);
+	// Заполняет, либо очищает поля при вызове диалога
 	void setup(int modeVal);
 private:
 	Ui_Order ui;
 	int mode;
+	// Рассчитывает стоимость материалов
 	static QString countPrice(int size, QString material, QString color) {
 		QSqlQuery query;
 		query.prepare(R"(SELECT Price FROM Fabrics WHERE Material=:material AND Color=:color)");
@@ -24,13 +26,20 @@ private:
 	}
 
 private slots:
+	// Пересчитывает стоимость материалов
 	void changePrice();
+	// Завершает заказ
 	void completeOrder();
+	// Добавляет или обновляет записи в бд
 	void changeOrder();
+	// Закрывает диалог
 	void comeback();
+	// Рассчитывает, хватает ли материалов для выполнения заказа
 	void changeColor(const QString & = nullptr);
+	// Удаляет заказ
 	void deleteOrder();
 signals:
+	// Сигнализирует, что нужно открыть MainWindow
 	void backSignal();
 };
 

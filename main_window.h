@@ -18,13 +18,20 @@ private:
 	Storage *storageDialog;
 	Order *orderDialog;
 	QString search = "";
+	// Обновляет данные в таблицах
 	void fillTables();
 private slots:
+	// Слот, отрабатывающий смену вкладки
 	void tabChange();
+	// Слот для открытия диалога нового материала
 	void newMaterial();
+	// Слот для открытия диалога нового заказа
 	void newOrder();
+	// Обновляет и открывает таблицы
 	void showWindow();
+	// Поиск по ключевому слову из textEdit
 	void filterData();
+	// Отслеживание двойного нажатия на таблицу
 	void handleStorageClick(const QModelIndex &clickedIndex);
 };
 
